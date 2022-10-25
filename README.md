@@ -1,23 +1,18 @@
-# Drill Simulator
-Application for shooting images of the inside of cylinder for structure form motion.
+# Rock Classification using CNN
+Classify six types of rock using a Convolutional Neural Network.
 
-## Features
-- parameters for generation of cylinder and camera arrangement
-- rendering options (resolution of images and output path)
-- preservation cylinder objects and camera arrangement objects as assets
+## Prologue
+Rock classification is a fundamental part of geological surveys. However, accurate classification of rock is still challenging considering the high variety of rock types and the nonuniformity of their properties. Therefore, I present a method to classify six types of rocks. 
 
-
-# Installation
-Clone this project and open with Unity.
+# What It Is
+This project can classify high similarity six types of rock with accuracy of 93% and show the results with a saliency map highlighting the discriminative object parts detected by the CNN.
 
 
-# Sample
-1. Open Assets/Sample/SampleScene.unity
-2. Click "Render" botton in Assets/Sample/SampleCylinder.asset (wait for several seconds)
-3. Images will be generated in output/
+# Dataset
+The [SDNet2018](https://digitalcommons.usu.edu/all_datasets/48/) dataset is the benchmark for crack detection which contains over 56,000 images of six types of rock: cracked and uncracked concrete bridge decks, walls, pavements, respectively. The dataset includes cracks as narrow as 0.06 mm and as wide as 25 mm with a variety of obstructions, including shadows, surface roughness, scaling, edges, holes, and background debris. Each image is segmented into 256 *256 pixels sub images for later uses.
 
 
-# Usage
+# How It Works
 ## Generation of custom cylinder
 1. Right click on Unity and select Create/CylinderData
 
